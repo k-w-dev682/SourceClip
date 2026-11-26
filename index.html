@@ -59,20 +59,22 @@
       margin-bottom: 30px;
     }
 
-    /* Shared outline icons */
-    .line-icon {
+    /* Brand icons */
+    .brand-icon {
       display: block;
-      width: 22px;
-      height: 22px;
+      width: 25px;
+      height: 25px;
       flex-shrink: 0;
-      fill: none;
-      stroke: #c2c7d0;
-      stroke-width: 1.7;
-      stroke-linecap: round;
-      stroke-linejoin: round;
+      object-fit: contain;
     }
 
-    /* Support section */
+    /* Edge icon from Tabler Icons */
+    .edge-icon {
+      width: 50px !important;
+      height: 50px !important;
+      filter: brightness(0) invert(0.78);
+    }
+
     .support-section {
       margin-bottom: 30px;
     }
@@ -120,9 +122,9 @@
       transform: translateY(-2px);
     }
 
-    .support-button .line-icon {
-      width: 21px;
-      height: 21px;
+    .support-button .brand-icon {
+      width: 23px;
+      height: 23px;
       justify-self: center;
     }
 
@@ -163,10 +165,9 @@
       justify-content: center;
     }
 
-    .icon .line-icon {
-      width: 38px;
-      height: 38px;
-      stroke-width: 1.45;
+    .icon .brand-icon {
+      width: 40px;
+      height: 40px;
     }
 
     .browser-info {
@@ -193,13 +194,13 @@
       text-align: center;
     }
 
-    .support-button .arrow {
-      justify-self: center;
-    }
-
     .browser > .arrow {
       width: 24px;
       flex-shrink: 0;
+    }
+
+    .support-button .arrow {
+      justify-self: center;
     }
 
     .disabled {
@@ -286,10 +287,11 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M6 3v18"/>
-            <path d="M10 3h5.2a5.3 5.3 0 0 1 0 10.6H10z"/>
-          </svg>
+          <img
+            class="brand-icon"
+            src="https://cdn.simpleicons.org/patreon/C2C7D0"
+            alt=""
+          >
           <span>Support on Patreon</span>
           <span class="arrow">↗</span>
         </a>
@@ -301,12 +303,11 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4 8h13v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/>
-            <path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/>
-            <path d="M8 4c-1 1-1 2 0 3"/>
-            <path d="M12 4c-1 1-1 2 0 3"/>
-          </svg>
+          <img
+            class="brand-icon"
+            src="https://cdn.simpleicons.org/kofi/C2C7D0"
+            alt=""
+          >
           <span>Support on Ko-fi</span>
           <span class="arrow">↗</span>
         </a>
@@ -318,14 +319,11 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M5 8h13v7a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z"/>
-            <path d="M18 10h1a2.5 2.5 0 0 1 0 5h-1"/>
-            <path d="M8 4v2"/>
-            <path d="M12 4v2"/>
-            <path d="M16 4v2"/>
-            <path d="M4 22h16"/>
-          </svg>
+          <img
+            class="brand-icon"
+            src="https://cdn.simpleicons.org/buymeacoffee/C2C7D0"
+            alt=""
+          >
           <span>Buy Me a Coffee</span>
           <span class="arrow">↗</span>
         </a>
@@ -344,13 +342,11 @@
         rel="noopener noreferrer"
       >
         <span class="icon">
-          <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="9"/>
-            <circle cx="12" cy="12" r="3.5"/>
-            <path d="M12 8.5h8"/>
-            <path d="M8.8 14 5.2 20"/>
-            <path d="M8.8 10 4.5 3.9"/>
-          </svg>
+          <img
+            class="brand-icon"
+            src="https://cdn.simpleicons.org/googlechrome/C2C7D0"
+            alt=""
+          >
         </span>
 
         <span class="browser-info">
@@ -371,11 +367,11 @@
         rel="noopener noreferrer"
       >
         <span class="icon">
-          <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M20.5 16.5a8.8 8.8 0 0 1-8.3 4.5A9 9 0 0 1 3 12.2C3 7.1 7 3 12 3c4.2 0 7.5 2.8 8.4 6.6"/>
-            <path d="M20.5 16.5c-1.5 1.1-3.3 1.6-5.3 1.6-3.4 0-5.4-1.4-5.4-3.5 0-2 1.8-3.3 4.2-3.3 2.2 0 4.2.7 6.4 2"/>
-            <path d="M20.5 16.5c.5-1.1.7-2.3.5-3.5"/>
-          </svg>
+          <img
+            class="brand-icon edge-icon"
+            src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/outline/brand-edge.svg"
+            alt=""
+          >
         </span>
 
         <span class="browser-info">
@@ -391,10 +387,11 @@
       <!-- Mozilla Firefox -->
       <div class="browser disabled" aria-disabled="true">
         <span class="icon">
-          <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M13 3c1.5 1.5 2 3 1.5 4.5 2.5-.5 4.5.5 5.5 3 1.5 4-1 9-6 10-5 1-10-2-10-7 0-3 1.5-5.5 4-7 0 2 1 3 2.5 3.5C9.5 7 11 4.5 13 3z"/>
-            <path d="M9 14c.5 1.5 2 2.5 3.5 2.5"/>
-          </svg>
+          <img
+            class="brand-icon"
+            src="https://cdn.simpleicons.org/firefoxbrowser/C2C7D0"
+            alt=""
+          >
         </span>
 
         <span class="browser-info">
