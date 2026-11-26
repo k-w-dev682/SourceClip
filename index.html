@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08090c">
+  <title>SourceClip – Pobierz rozszerzenie</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+      background: #08090c;
+      color: #f4f5f7;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main {
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 68px;
+      height: 68px;
+      margin: 0 auto 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #171526;
+      border: 1px solid #393252;
+      border-radius: 20px;
+      font-size: 32px;
+      color: #a99aff;
+    }
+
+    h1 {
+      font-size: 42px;
+      letter-spacing: -2px;
+      margin-bottom: 12px;
+    }
+
+    .description {
+      color: #9298a7;
+      line-height: 1.6;
+      font-size: 15px;
+      margin-bottom: 35px;
+    }
+
+    .downloads {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .browser {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 17px;
+      min-height: 78px;
+      background: #111319;
+      border: 1px solid #252936;
+      border-radius: 14px;
+      color: white;
+      text-decoration: none;
+      text-align: left;
+      transition: 0.2s ease;
+    }
+
+    a.browser:hover {
+      background: #191b25;
+      border-color: #6659a0;
+      transform: translateY(-2px);
+    }
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 29px;
+    }
+
+    .browser-info {
+      flex: 1;
+    }
+
+    .browser-name {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .browser-description {
+      display: block;
+      font-size: 12px;
+      color: #9298a7;
+    }
+
+    .arrow {
+      color: #858b9b;
+      font-size: 20px;
+    }
+
+    .disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .badge {
+      font-size: 11px;
+      padding: 6px 10px;
+      border-radius: 20px;
+      color: #b6adff;
+      background: #25213c;
+      white-space: nowrap;
+    }
+
+    /* Privacy Policy */
+    .privacy {
+      display: inline-block;
+      margin-top: 38px;
+      padding: 10px 18px;
+      color: #9298a7;
+      font-size: 13px;
+      text-decoration: none;
+      border: 1px solid #252936;
+      border-radius: 8px;
+      transition: 0.2s ease;
+    }
+
+    .privacy:hover {
+      color: #ffffff;
+      border-color: #6659a0;
+      background: #111319;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: #626978;
+      font-size: 12px;
+    }
+
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      .browser {
+        padding: 14px;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+
+    <div class="logo">▤</div>
+
+    <h1>SourceClip</h1>
+
+    <p class="description">
+      Zapisuj, organizuj i porządkuj przydatne informacje
+      znalezione w sieci. Wybierz swoją przeglądarkę,
+      aby zainstalować rozszerzenie.
+    </p>
+
+    <section class="downloads">
+
+      <!-- Google Chrome -->
+      <a
+        class="browser"
+        href="https://chromewebstore.google.com/detail/sourceclip-%E2%80%93-research-web/pmdfocgkckpeobcpollogcddkhiinjam"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="icon">🌐</span>
+
+        <span class="browser-info">
+          <span class="browser-name">Google Chrome</span>
+          <span class="browser-description">
+            Zainstaluj z Chrome Web Store
+          </span>
+        </span>
+
+        <span class="arrow">↗</span>
+      </a>
+
+      <!-- Microsoft Edge -->
+      <a
+        class="browser"
+        href="https://microsoftedge.microsoft.com/addons/detail/sourceclip-%E2%80%93-research-w/khkagonpgolkoinfoaapgkhclhddepdd"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="icon">🌊</span>
+
+        <span class="browser-info">
+          <span class="browser-name">Microsoft Edge</span>
+          <span class="browser-description">
+            Zainstaluj z Microsoft Edge Add-ons
+          </span>
+        </span>
+
+        <span class="arrow">↗</span>
+      </a>
+
+      <!-- Mozilla Firefox -->
+      <div class="browser disabled" aria-disabled="true">
+        <span class="icon">🦊</span>
+
+        <span class="browser-info">
+          <span class="browser-name">Mozilla Firefox</span>
+          <span class="browser-description">
+            Wersja dla Firefox jest w przygotowaniu
+          </span>
+        </span>
+
+        <span class="badge">Wkrótce</span>
+      </div>
+
+    </section>
+
+    <!-- Privacy Policy -->
+    <a class="privacy" href="privacy.html">
+      Privacy Policy ↗
+    </a>
+
+    <footer>
+      SourceClip · Proste narzędzie do porządkowania wiedzy z sieci
+    </footer>
+
+  </main>
+
+</body>
+</html>
