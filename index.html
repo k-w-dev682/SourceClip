@@ -56,9 +56,63 @@
       color: #9298a7;
       line-height: 1.6;
       font-size: 15px;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
     }
 
+    /* Support section */
+    .support-section {
+      margin-bottom: 30px;
+    }
+
+    .support-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
+
+    .support-description {
+      color: #9298a7;
+      font-size: 12px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .support-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .support-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      min-height: 49px;
+      padding: 12px 16px;
+      background: #111319;
+      border: 1px solid #252936;
+      border-radius: 10px;
+      color: #f4f5f7;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .support-button:hover {
+      background: #191b25;
+      border-color: #6659a0;
+      transform: translateY(-2px);
+    }
+
+    .support-button img {
+      width: 21px;
+      height: 21px;
+      object-fit: contain;
+    }
+
+    /* Browser downloads */
     .downloads {
       display: flex;
       flex-direction: column;
@@ -137,9 +191,10 @@
       white-space: nowrap;
     }
 
+    /* Privacy Policy */
     .privacy {
       display: inline-block;
-      margin-top: 38px;
+      margin-top: 30px;
       padding: 10px 18px;
       color: #9298a7;
       font-size: 13px;
@@ -187,6 +242,67 @@
       Choose your browser to get started.
     </p>
 
+    <!-- Support SourceClip -->
+    <section class="support-section">
+
+      <h2 class="support-title">Support SourceClip</h2>
+
+      <p class="support-description">
+        SourceClip is free to use and will always stay that way.
+        If you enjoy the project, you can help support its development.
+      </p>
+
+      <div class="support-buttons">
+
+        <!-- Patreon -->
+        <a
+          class="support-button"
+          href="https://www.patreon.com/cw/SourceClip"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://cdn.simpleicons.org/patreon"
+            alt="Patreon logo"
+          >
+          Support on Patreon
+          <span class="arrow">↗</span>
+        </a>
+
+        <!-- Ko-fi -->
+        <a
+          class="support-button"
+          href="https://ko-fi.com/sourceclip"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://cdn.simpleicons.org/kofi"
+            alt="Ko-fi logo"
+          >
+          Support on Ko-fi
+          <span class="arrow">↗</span>
+        </a>
+
+        <!-- Buy Me a Coffee -->
+        <a
+          class="support-button"
+          href="https://buymeacoffee.com/SourceClip"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://cdn.simpleicons.org/buymeacoffee"
+            alt="Buy Me a Coffee logo"
+          >
+          Buy Me a Coffee
+          <span class="arrow">↗</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Browser Downloads -->
     <section class="downloads">
 
       <!-- Google Chrome -->
